@@ -1,8 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
 using System.Text;
-using System.Threading.Tasks;
 
 namespace CalculatronV2
 {
@@ -15,7 +12,7 @@ namespace CalculatronV2
             int[] operands = new int[2];
             ShowCalculation(calculation);
             operands = GetInputs();
-            Console.WriteLine("\t" + calculate(operands[0],operands[1]));
+            Console.WriteLine("\t" + calculate(operands[0], operands[1]));
             Console.Write("\t> ");
             Console.ReadKey();
             DisplayMenu();
@@ -107,7 +104,7 @@ namespace CalculatronV2
                     default:
                         break;
                 }
-            } while (function!=9);
+            } while (function != 9);
         }
     }
 }
